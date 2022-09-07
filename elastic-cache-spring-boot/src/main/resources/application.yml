@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /api/v0
+
+cache:
+  redis:
+    hostName: localhost
+    hostPort: 6379
