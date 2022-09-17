@@ -19,7 +19,7 @@ This app serves as a rest api for users resource
 
 ## SetUp
 1. Install Node on your machine
-   [https://nodejs.org/en/]()
+   [Official site](https://nodejs.org/en/)
 2. Verify the installation with following command
      ```js
      node --version
