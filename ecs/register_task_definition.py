@@ -3,7 +3,7 @@ import json
 from botocore import client as BotoClient
 from botocore.exceptions import ClientError
 
-from ssm_parameter_script import fetch_client, mask_input
+from aws_util import fetch_client, mask_input
 
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_ACCESS_SECRET_KEY = os.getenv('AWS_ACCESS_SECRET_KEY')
