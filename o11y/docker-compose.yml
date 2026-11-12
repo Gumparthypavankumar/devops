@@ -12,6 +12,7 @@ services:
     image: prom/prometheus:v2.37.0
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - /tmp/prometheus:/prometheus
     ports:
       - "9090:9090"
     networks:
@@ -21,6 +22,9 @@ services:
     image: grafana/grafana:9.0.0
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./grafana-provisioning:/etc/grafana/provisioning
+      - /tmp/grafana:/var/lib/grafana
     ports:
       - "3000:3000"
     networks:
